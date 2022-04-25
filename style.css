@@ -1,12 +1,23 @@
+body{
+  font-family: 'Cormorant Garamond';
+}
 .header{
   height: 95px;
   display: flex;
-}
-div{
-  border: 1px solid #f00
-}
+  max-width: 1330px;
+  min-width: 1280px;
+  margin: auto;
+} 
+  .main{
+    max-width: 1330px;
+    min-width: 1280px;
+    margin: auto;
+  }
 .header-link{
   margin: auto;
+  font-size: 28px;
+  text-decoration: none;
+  color: #10191E;
 }
 .project{
   background-position: center;
@@ -24,10 +35,14 @@ div{
 }
 .flex-row{
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .flex-column{
   width: 636px;
   height: 557px;
+  display: flex;
+  justify-content: space-between;
 }
 .project_procrastinate{
   width: 636px;
@@ -55,4 +70,61 @@ div{
   width: 306px;
   height: 290px;
   background-image: url(https://code.s3.yandex.net/web-code/reactive.gif);
+}
+.flex-column_reversed{
+  flex-direction: column-reverse;
+}
+.flex-row_reversed{
+  flex-direction: row-reverse;
+  margin: 60px auto;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  min-height: 75px;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1330px;
+  min-width: 1280px;
+  margin: 40px auto;
+}
+.menu-link{
+  font-size: 18px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #10191E;
+}
+.project_vanilla{
+ width: 306px;
+ height: 290px; 
+}
+.project_how-to-study{
+  background-image: url(https://code.s3.yandex.net/web-code/how-to-study.png);
+  order: 3;
+}
+.project_across-russia{
+  background-image: url(https://code.s3.yandex.net/web-code/across-russia.png);
+  flex-basis: 636px;
+  order: 2;
+}
+.project_mesto{
+  background-image: url(https://code.s3.yandex.net/web-code/mesto.png);
+  order: 1;
+}
+.footer{
+  display: flex;
+  height: 95px;
+  justify-content: center;
+  max-width: 1330px;
+  min-width: 1280px;
+  margin: auto;
+}
+.logo{
+  width: 145px;
+  height: 25px;
+  background-image: url(https://pictures.s3.yandex.net/logo_black.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
 }
